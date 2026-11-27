@@ -15,3 +15,13 @@ variable "environment" {
   type        = string
   default     = "dev"
 }
+
+variable "github_owner" {
+  description = "GitHub organization or username owning the repository"
+  type        = string
+}
+
+variable "github_repo" {
+  description = "GitHub repository name used for deployments"
+  type        = string
+}

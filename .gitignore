@@ -45,4 +45,11 @@ terraform.rc
 
 .terraform.lock.hcl
 
-venv
+terraform/terraform.tfvars
+terraform/*.auto.tfvars
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
