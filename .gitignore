@@ -43,4 +43,13 @@ terraform.rc
 # Uncomment the line below if you want to ignore planout files.
 # planout
 
-venv
+.terraform.lock.hcl
+
+terraform/terraform.tfvars
+terraform/*.auto.tfvars
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
