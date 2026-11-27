@@ -1,4 +1,3 @@
-
 # Security Group for Application Load Balancer
 resource "aws_security_group" "alb" {
   name        = "${var.project_name}-alb-sg"
