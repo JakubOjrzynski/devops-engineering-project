@@ -3,7 +3,7 @@ resource "aws_ecs_service" "infoapp" {
   name            = "${var.project_name}-infoapp-service"
   cluster         = aws_ecs_cluster.main.id
   task_definition = aws_ecs_task_definition.infoapp.arn
-  desired_count   = 0
+  desired_count   = 1
   launch_type     = "FARGATE"
 
   deployment_minimum_healthy_percent = 100
@@ -39,7 +39,7 @@ resource "aws_ecs_service" "statusapp" {
   name            = "${var.project_name}-statusapp-service"
   cluster         = aws_ecs_cluster.main.id
   task_definition = aws_ecs_task_definition.statusapp.arn
-  desired_count   = 0
+  desired_count   = 1
   launch_type     = "FARGATE"
 
   deployment_minimum_healthy_percent = 100
